@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.datatables.net/v/bs4/dt-1.13.8/datatables.min.css" rel="stylesheet">
+    <style>
+        body{
+            background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5 ">
+            <div class="col-lg-6 mx-auto mt-5 bg-transparent">
+                <div class="card shadow mt-5 bg-transparent">
+                    <div class="card-header bg-dark text-center">
+                        <h3 class="text-light"> Admin Login</h3>
+                    </div>
+                    <div class="card-body p-4">
+                        <form action="/admin-login" method="post" id="add-form" >
+                            <div class="mb-3">
+                                <label for="name" class="text-light">&nbsp;&nbsp;Admin id</label>
+                                <input type="email" name="Username"  class="form-control form-control-lg" placeholder="Enter Admin id" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="text-light">&nbsp;&nbsp;Password</label>
+                                <input type="password" name="password" class="form-control form-control-lg" placeholder="Enter Password" required>
+                            </div>
+                            <div class="mb-3 d-grid">
+                                <input type="submit" name="submit" value="Login" class="btn btn-secondary btn-lg">
+                            </div>
+                            <div>
+                                <a href="/" class="text-light">Login as User</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/v/bs4/dt-1.13.8/datatables.min.js"></script>
+</html>
