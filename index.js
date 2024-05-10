@@ -30,7 +30,7 @@ app.set('view engine','ejs');
 
 //database connection
 
-const con = mongoose.connect( "mongodb://localhost:27017/node_crud")
+const con = mongoose.connect(process.env.DB)
 
 con.then(()=>{
     console.log('connected to db')
